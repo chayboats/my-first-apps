@@ -1,0 +1,121 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgb(13, 72, 124);
+}
+
+main {
+  max-width: 750px;
+  border: 3px solid rgb(227, 227, 227);
+  margin: 3rem auto;
+  background-color: white;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 1rem;
+}
+
+h1 span:first-of-type {
+  color: rgb(56, 151, 189);
+  font-size: 1rem;
+  padding-top: .3rem
+}
+
+h1 span:last-of-type {
+  color: rgb(13, 72, 124);
+}
+
+.months {
+  background-color: rgb(13, 72, 124);
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  padding: .5rem 0;
+}
+
+.month {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+table {
+  border-bottom: 5px double rgb(13, 72, 124);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container {
+  margin: auto;
+  padding: 1rem;
+}
+
+caption {
+  text-align: left;
+  font-size: 1.5rem;
+  color: rgb(56, 151, 189);
+  margin-top: .5rem;
+}
+
+thead tr[class] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, rgb(212, 224, 230), 1.845rem, white 1.845rem);
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+  padding-left: .5rem;
+}
+
+th, td {
+  padding-top: .4rem;
+}
+
+.description {
+  font-weight: normal;
+  font-style: italic;
+  display: block;
+  padding: .75rem 0 .4rem 0 ;
+}
+
+td {
+  text-align: right;
+  width: 5.5rem;
+  vertical-align: top; 
+}
+
+.current {
+  font-style: italic;
+}
+
+.current, tr td:nth-of-type(2) {
+  padding-right: 1.5rem;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.total:hover {
+  background-color: black;
+  color: white;
+}
+
+table .total:hover  {
+  border-bottom: 5px double rgb(56, 151, 189);
+}

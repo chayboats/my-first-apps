@@ -1,0 +1,258 @@
+:root {
+  --building-color1: red;
+  --building-color2: yellow;
+  --building-color3: blue;
+  --window-color1: rgb(255, 67, 67);
+  --window-color2: rgb(255, 255, 121);
+  --window-color3: rgb(101, 101, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(
+    closest-corner circle at 15% 15%,
+    yellow 0%, 
+    yellow 30%,
+    transparent
+  ), 
+  linear-gradient(
+    yellow, orange, rgb(255, 48, 227)
+  );
+}
+.background-builings, .midground-buildings, .foreground-buildings {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.bb1 {
+  width: 90px;
+  height: 590px;
+}
+
+.bb1a {
+  width: 5px;
+  height: 35px;
+  background-color: black;
+  
+}
+
+.bb1b {
+  width: 70px;
+  height: 40px;
+  background-color: var(--building-color3);
+}
+
+.bb1c {
+  height: 100%;
+  width: 100%;
+  background: 
+  repeating-linear-gradient(
+    90deg, var(--building-color3), 
+    var(--building-color3) 10%,
+    transparent 10%,
+    transparent 15%
+  ), 
+
+  repeating-linear-gradient(
+    160deg, var(--building-color2),
+    var(--building-color2) 10%,
+    var(--window-color3) 10%,
+    var(--window-color3) 95%
+  );
+}
+
+.building-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bb2 {
+  width: 100px;
+  height: 510px;
+}
+
+.bb2a {
+  width: 100;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top:  50px solid transparent; 
+  border-left: 50px solid var(--building-color1);
+  border-bottom: 50px solid var(--building-color1);
+}
+
+.bb2b {
+  background:
+  repeating-linear-gradient(
+    165deg,
+    white,
+    white .5%,
+    var(--building-color1) .5%,
+    var(--building-color1) 4%,
+    var(--window-color1) 4%,
+    var(--window-color1) 6%
+  );
+  height: 100%;
+  width: 100%;
+}
+
+.bb3 {
+  width: 150px;
+  height: 670px;
+}
+
+.bb3a {
+  width: 5x;
+  height: 55px;
+  background-color: var(--building-color2);
+}
+
+.bb3b {
+  width: 70px;
+  height: 60px;
+  background-color: var(--building-color2);
+}
+
+.bb3c {
+  width: 120px;
+  height: 65px;
+  background-color: var(--building-color2);
+}
+
+.bb3d {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg, var(--building-color2),
+    var(--building-color2) 15%,
+    transparent 15%,
+    transparent 30%
+  ),
+
+  repeating-linear-gradient(
+    160deg, white,
+    white 10%,
+    var(--window-color2) 10%,
+    var(--window-color2) 95%
+  );
+}
+
+.mb1 {
+  width: 170px;
+  height: 440px;
+  margin-left: 240px;
+  background: 
+  repeating-linear-gradient(
+    var(--building-color3),
+    var(--building-color3) 7%,
+    transparent 7%,
+    transparent 17%
+  ),
+
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color3),
+    var(--building-color3) 5%,
+    var(--window-color3) 5%,
+    var(--window-color3) 32%
+  );
+}
+
+.fb1 {
+  width: 100px;
+  height: 360px;
+  background: 
+  repeating-linear-gradient(
+    var(--building-color1),
+    var(--building-color1) 5%,
+    transparent 5%,
+    transparent 10%
+  ),
+  
+  repeating-linear-gradient(
+    90deg, var(--building-color1),
+    var(--building-color1) 10%,
+    var(--window-color1) 10%,
+    var(--window-color1) 45%
+  );
+}
+
+.fb2 {
+  width: 110px;
+  height: 400px;
+  background-color: var(--building-color2);
+  background: 
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color2),
+    var(--building-color2) 10%,
+    transparent 10%,
+    transparent 90%
+  ),
+
+  repeating-linear-gradient(
+    var(--building-color2),
+    var(--building-color2) 5%,
+    var(--window-color2) 5%,
+    var(--window-color2) 10%,
+    white 10%,
+    white 11%
+  );
+}
+
+.fb3 {
+  width: 150px;
+  height: 450px;
+  margin-right: 130px;
+}
+
+.fb3a {
+  width: 66px;
+  height: 80px;
+  background-color: var(--building-color1);
+  transform: rotate(45deg);
+  top: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.fb3b {
+  width: 100px;
+  height: 40px;
+  background-color: var(--building-color1);
+}
+
+.fb3c {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background:
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color1),
+    var(--building-color1) 9%,
+    transparent 9%,
+    transparent 13%
+  ),
+
+  repeating-linear-gradient(
+  175deg,
+  white,
+  white 5%,
+  var(--window-color1) 5%,
+  var(--window-color1) 96%
+  );
+}
+

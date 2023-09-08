@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(236, 90, 146);
+}
+
+.piano {
+  background-color: black;
+  width: 900px;
+  height: 280px;
+  margin: auto;
+  position: relative;
+}
+
+#white-keys {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.white-key {
+  background-color: white;
+  width: calc(100%/15);
+  margin: 2px;
+}
+
+#black-keys {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;  
+}
+
+.black-key {
+  width: 100%;
+  background-color: black;  
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.right {
+  margin-right: 35px;
+  margin-left: 17.5px;
+}
+
+.left {
+  margin-left: 35px;
+  margin-right: 17.5px
+}
+
+.middle {
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+}
